@@ -1,0 +1,726 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/****** CSS Geral ******/
+conteudo {
+	display:block;
+	width:100%;
+	overflow:hidden;
+}
+
+body {
+	margin: 0;
+	background: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	color: #787878;
+	font-size: 14px
+}
+
+* {
+	box-sizing: border-box
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style: none
+}
+button {
+	background: #59ab39;
+	border: 0;
+	color: #fff;
+	border-radius: 600px;
+	font-size: 15px;
+	line-height: 15px;
+	padding: 15px 40px
+}
+h3 {
+	color: #4cabe8;
+	font-size: 22px;
+	font-weight: 600;
+	margin: 0 0 20px
+}
+h5 {
+	font-size: 17px;
+	font-weight: 600;
+	margin: 0 0 20px
+}
+.container {
+	width: 1130px;
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative
+}
+/****** Header ******/
+header {
+	display: table;
+	padding: 20px 0 15px;
+	width: 100%
+}
+#logo_porto, #logo_santana {
+	float: left;
+} 
+#logo_porto {
+	margin-right: 50px
+}
+#logo_santana span {
+	float: left;
+}
+#logo_santana span.text {
+	max-width: 200px;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 11px 5px 0 20px;
+	line-height: 14px
+}
+
+.header_atendimento {
+	float: right;
+	text-align: right;
+	max-width: 450px
+}
+.header_atendimento label {
+	font-weight: 600;
+	font-size: 13px;
+	color: #333;
+	margin-bottom: 10px;
+	display: block;
+	width: 100%;
+	float: right
+}
+.header_atendimento li {
+	display: inline-table;
+	font-weight: 800;
+	color: #028fe0;
+	line-height: 18px;
+}
+.header_atendimento li.tel {
+	margin-left:25px
+}
+.header_atendimento a {
+	color: #028fe0
+}
+.header_atendimento span.icone {
+	background: url("../img/sprite.png");
+	background-position: 0 -178px;
+	width: 18px;
+	height: 18px;
+	display: table;
+	float: left;
+	margin-right: 10px;
+}
+.header_atendimento li.tel span.icone {
+	background-position: -36px -178px
+}
+.header_atendimento li.tel span.info.two {
+	margin-left:10px;
+	border-left: 2px solid;
+	padding-left: 10px
+}
+
+/****** Banner Família ******/
+#main_banner {
+	clear: both;
+	display: table;
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-bottom: 25px
+}
+#main_banner .apresentacao {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	height: 50%;
+	color: #fff;
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 24%, rgba(0,0,0,0.65) 65%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 24%,rgba(0,0,0,0.65) 65%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 24%,rgba(0,0,0,0.65) 65%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+#main_banner .apresentacao h2 {
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 32px;
+	padding: 160px 20px 0;
+	margin: 0 0 15px
+}
+#main_banner .apresentacao p {
+	font-size: 18px;
+	padding: 0 20px;
+	max-width: 40%;
+	margin: 0 auto 20px
+}
+#main_banner img {
+	position: relative;
+	display: block;
+	width: 100%
+}
+
+/****** Formulário pop-up ******/
+.fancybox-content {
+	border-radius: 10px;
+	padding: 30px 30px 0!important;
+	width: 40%
+}
+.fancybox-container #modal .chamada {
+	display: none
+}
+/****** Vantagens ******/
+#vantagens, #consorcio, #instagram_feed, #simulador,#comparativo, #faq {
+	clear: both;
+	margin-bottom: 140px 
+}
+
+#vantagens span {
+	background: #4cabe8;
+	color: #fff;
+	border-radius: 8px;
+	text-align: center;
+	display: inline-table;
+	width: 32%;
+	padding: 30px 15px;
+	text-transform: uppercase;
+	font-size: 15px
+}
+#vantagens span:nth-child(2) {
+	margin: 0 1.5%
+}
+/****** Tabela + formulário ******/
+#simulador #tabela {
+	width: 56%;
+	float: left;
+	margin-right: 4%
+}
+#simulador .chamada {
+	margin-bottom: 20px
+}
+#simulador .chamada span {
+	display: block;
+	width: 100%;
+	margin-bottom: 5px
+}
+.caixamenu-TABLE {
+	font-weight: 400;
+	list-style: none;
+	width: 100%;
+}
+.caixamenu-TABLE ul{
+	max-width: 100%;
+	padding: 0;
+	margin: 0
+}
+.caixamenu-TABLE li {
+	color: #787878;
+	list-style: none;
+	display: inline;
+	display: inline-block;
+	width: 48%;
+	margin-right: 1%
+}
+
+.TTP {
+	background-color: #4cabe8;
+	padding: 8px 0;
+}
+.TTP li {
+	font-size: 13px
+}
+
+.caixamenu-cell {
+	font-weight: 400;
+	list-style: none;
+	max-width: 100%;
+	padding-bottom: 10;
+}
+.caixamenu-cell ul{
+	max-width: 100%;
+}
+.caixamenu-cell li {
+	list-style: none;
+	display: inline;
+	display: inline-block;	
+	width: 48%;
+	text-align: center;	
+	font-size: 14px;
+	padding: 5px 0;
+	margin: 0
+}
+.caixamenu-fonte {
+	font-weight: 400;
+	list-style: none;
+}
+.chamada-rodape{
+	font-size:12px;
+	clear: both;
+	display: table;
+	width: 100%
+}
+#simulador .formulario {
+	width: 40%;
+	float: left;
+	display: block!important;
+}
+
+/****** Consórcio ******/
+#consorcio{
+	text-align: center;
+}
+#consorcio h2 {
+	font-weight: 400;
+	font-size: 25px;
+	margin: 0 0 25px
+}
+#consorcio strong {
+	font-weight: 600
+}
+#consorcio p {
+	font-size: 15px;
+}
+#comparativo img {
+	display: table;
+	width: auto;
+	max-width: 100%;
+	margin: 0 auto
+}
+#comparativo img.mobile {
+	display: none;
+	width: auto;
+	max-width: unset!important
+}
+/****** Perguntas Frequentes ******/
+#faq {
+	background: #eeeeee;
+	padding: 20px 0 0
+}
+#faq h3,#comparativo h3 {
+	text-align: center;
+	margin-bottom: 30px
+}
+
+/****** Página Sobre ******/
+.container.sobre {
+	padding: 40px 15px 150px;
+	display: table
+}
+.sobre img.primeira {
+	float: left;
+	width: auto;
+	max-width: 49%;
+	margin-right: 6%
+}
+.sobre p {
+	float: left;
+	width: auto;
+	max-width: 45%;
+	margin: 0;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: justify
+}
+.sobre .fotos_bottom {
+	clear: both;
+	position: relative
+}
+.sobre img.segunda {
+	position: absolute;
+	left: 0;
+	top: 60px;
+}
+.sobre img.terceira {
+	float: right;
+	margin-top: -30px;
+	width: auto;
+	max-width: 50%
+}
+/****** Feed do Instagram ******/
+#instagram_feed {
+	text-align: center
+}
+#instagram_feed h5 {
+	margin-bottom: 10px
+}
+#instagram_feed h5 a {
+	color: #4cabe8;
+	font-size: 20px
+}
+#instagram_feed p {
+	margin: 0 0 50px
+}
+/****** Footer ******/
+footer {
+	clear: both;
+	background: #eeeeee;
+	display: table;
+	width: 100%;
+	padding: 40px 0;
+}
+footer #logo_rodape, footer #info1, footer #info2{
+	float: left;
+	width: 32%
+}
+footer #logo_rodape {
+	margin-top: 50px;
+	width: 26%
+}
+footer h5 {
+	color: #4cabe8
+}
+footer a {
+	color:#414141!important
+}
+footer #info2 a {
+	text-decoration: underline;
+	color: #787878
+}
+footer #info2 li {
+	display: inline-block;
+	margin-right: 10px
+}
+footer #info2 li a {
+	background: url("../img/sprite.png") 0 -70px;
+	display: block;
+	width:36px;
+	height: 36px
+}
+footer #info2 li a.instagram {
+	background-position: -53px -70px
+}
+footer #subir {
+	position: fixed;
+	bottom: 80px;
+	right: 22px;
+	background: url("../img/sprite.png") 0 -129px #fff;
+	width: 27px;
+	height: 26px;
+	border-radius: 600px;
+	z-index: 3
+}
+
+footer #whats_botao {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	background: url("../img/sprite.png") 0 0;
+	width: 188px;
+	height: 47px;
+	z-index: 1000
+}
+footer #subir a, footer #whats_botao a {
+	display: block;
+	width: 100%;
+	height: 100%
+}
+
+/****** Código Responsivo ******/
+@media screen and (min-width:0) and (max-width:1280px) {
+	#main_banner .apresentacao {
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 2%, rgba(0,0,0,0) 14%, rgba(0,0,0,0.65) 35%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 2%,rgba(0,0,0,0) 14%,rgba(0,0,0,0.65) 35%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 2%,rgba(0,0,0,0) 14%,rgba(0,0,0,0.65) 35%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+	#main_banner .apresentacao h2 {
+		padding-top: 80px!important;
+	}
+	#main_banner .apresentacao p {
+		max-width: 100%;
+		width: 70%
+	}
+	.fancybox-content {
+		width: 50%
+	}
+}
+@media screen and (min-width:0) and (max-width:1100px) {
+	.container{width: 100%}
+	#main_banner .apresentacao h2 {
+		padding-top: 50px!important;
+	}
+	#main_banner .apresentacao p {
+		max-width: 100%;
+		width: 90%;
+		font-size: 15px
+	}
+}
+@media screen and (min-width:0) and (max-width:1024px) {
+	#logo_porto {
+    margin-right: 30px;
+	}
+	.formlariosDiv font.texto input#textinput15 {
+		width: 70%
+	}
+	.sobre img.terceira {
+		margin-top: 0
+	}
+}
+@media screen and (min-width:0) and (max-width:1000px) {
+	.header_atendimento {
+		max-width: 40%
+	}
+	#vantagens span {
+	 font-size: 14px;
+		vertical-align: middle
+	}
+	#comparativo img {
+		width: 100%;
+		display: block
+	}
+}
+@media screen and (min-width:0) and (max-width:900px) {
+	header {
+		text-align: center
+	}
+	header #logo_porto, header #logo_santana {
+		float: none;
+		display: inline-table;
+		vertical-align: middle
+	}
+	#logo_porto {
+    margin-right: 50px;
+	}
+	header .header_atendimento {
+		clear: both;
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+		padding-top: 10px;
+		border-top: 1px solid #eee;
+		margin-top: 10px
+	}
+	header .header_atendimento li {
+		margin: 0 10px!important
+	}
+		#main_banner .apresentacao {
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 4%, rgba(0,0,0,0.65) 25%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 4%,rgba(0,0,0,0.65) 25%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 4%,rgba(0,0,0,0.65) 25%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+	#main_banner .apresentacao h2 {
+		padding-top: 30px!important;
+		font-size: 25px
+	}
+	#consorcio {
+		padding: 0 10px
+	}
+	#consorcio h2 {
+		font-size: 22px
+	}
+	.sobre p {
+		font-size: 15px;
+		margin-bottom: 30px
+	}
+	.sobre img.segunda {
+		width: 60%
+	}
+	.sobre img.terceira {
+		width: 70%;
+		max-width: 50%
+	}
+}
+@media screen and (min-width:0) and (max-width:812px) {
+	#main_banner .apresentacao {
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 15%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 15%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 15%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+	}
+	#main_banner .apresentacao h2 {
+		font-size: 20px
+	}
+	button {
+		font-size: 13px
+	}
+	.fancybox-content {
+		width: 70%
+	}
+	#vantagens {
+		margin-bottom: 80px
+	}
+	#vantagens span {
+		font-size: 13px;
+	}
+	#vantagens span:nth-child(2) {
+		margin: 1.4%!important
+	}
+	.sobre img.primeira {
+		width: auto;
+		max-width: 100%;
+		margin: 0 auto;
+		float: none;
+		display: table
+	}
+	.sobre p {
+		width: 100%;
+		max-width: 100%;
+		float: left;
+		display: table;
+		text-align: left;
+		margin: 0;
+		padding: 30px 0
+	}
+	.sobre img.segunda {
+	top: 40px!important
+	}
+	footer #logo_rodape {
+		display: none
+	}
+	footer #info1, footer #info2 {
+		width: 45%
+	}
+}
+@media screen and (min-width:0) and (max-width:750px) {
+	#main_banner img {
+		width: 130%;
+		margin-left: -17%
+	}
+}
+@media screen and (min-width:0) and (max-width:610px) {
+	header #logo_santana {
+		position: relative;
+		text-align: center
+	}
+	header #logo_santana span {
+	float: none;
+    max-width: 100%;
+	display: block;
+	padding: 0!important;
+	}
+	header #logo_santana span.text {
+		font-size: 11px;
+		max-width: 160px
+	}
+	#main_banner img {
+		width: 150%;
+		margin-left: -28%
+	}
+	#vantagens span, #vantagens span:nth-child(2) {
+		width: 100%;
+		margin: 0 0 10px!important;
+		font-size: 15px;
+		padding: 15px
+	}
+	#simulador .chamada {
+		text-align: center
+	}
+	#simulador #tabela, #simulador .formulario {
+		width: 100%;
+	}
+	#simulador #tabela {
+		margin-bottom: 50px
+	}
+	#comparativo img.mobile {
+		display: block;
+		width: auto;
+		max-width: 100%!important
+	}
+	#comparativo img.desktop {
+		display: none
+	}
+	.AccordionPanelTab {
+		font-size: 16px!important
+	}
+	#instagram_feed .insta_inner {
+		width: 127%!important;
+	}
+	#consorcio, #simulador, #faq, #instagram_feed {
+		margin-bottom: 100px
+	}
+	footer {
+		padding-bottom: 70px;
+	}
+}
+@media screen and (min-width:0) and (max-width:500px) {
+	#main_banner img {
+		width: 180%;
+		margin-left: -43%
+	}
+	.AccordionPanelTab {
+		font-size: 15px!important
+	}
+	#instagram_feed .insta_inner {
+		width: 170%!important;
+	}
+	footer #info1, footer #info2 {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px
+	}
+	.fancybox-content {
+		width: 95%;
+		padding: 20px!important;
+	}
+}
+@media screen and (min-width:0) and (max-width:435px) {
+	.header_atendimento li.tel {
+		padding-top: 6px
+	}
+	#main_banner .apresentacao h2 {
+		padding-top: 10px!important
+	}
+	#main_banner .apresentacao p {
+		font-size: 13px;
+		width: 100%
+	}
+	#main_banner .apresentacao button {
+		padding: 10px 40px
+	}
+	.fancybox-content {
+		width: 90%
+	}
+	.fancybox-content #formlariosDiv {
+		width: 100%
+	}
+	#comparativo img.mobile {
+		width: 120%!important;
+		max-width: 300%!important;
+		margin-left: -10%
+	}
+}
+@media screen and (min-width:0) and (max-width:380px) {
+	header #logo_porto, header #logo_santana {
+		width: 100%!important;
+		margin: 0 auto 10px;
+		display: block;
+	}
+	header #logo_santana img {
+		width: 40%
+	}
+		header #logo_santana span.text {
+		white-space: nowrap;
+		display: table!important;
+		margin: 0 auto
+	}
+	#main_banner {
+		margin-bottom: 100px
+	}
+	#main_banner .apresentacao button {
+		width: 90%;
+		padding: 15px
+	}
+	#consorcio {
+		padding: 0
+	}
+	.formlariosDiv {
+		padding: 10px
+	}
+	.sobre img.segunda, .sobre img.terceira {
+	top: 0!important;
+		width: 100%;
+		position: relative;
+		max-width: 100%;
+		margin-bottom: 10px
+	}
+}
+@media screen and (min-width:0) and (max-width:350px) {
+	.caixamenu-cell li {
+		font-size: 13px
+	}
+}
+
+
+

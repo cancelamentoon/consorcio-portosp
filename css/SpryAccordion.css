@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* SpryAccordion.css - version 0.5 - Spry Pre-Release 1.6.1 */
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+.Accordion {
+	overflow: hidden;
+}
+.AccordionPanelTab {
+	margin: 0px;
+	padding: 25px 0;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	border-bottom: solid 2px #fff;
+	font-size: 17px;
+	position: relative
+}
+.AccordionPanelTab span.seta {
+	width: 12px;
+	height: 7px;
+	background: url("../img/sprite.png") 0 -250px;
+	position: relative;
+	display: inline-table;
+	vertical-align: middle;
+	margin-left: 20px
+}
+.AccordionPanelContent {
+	border-bottom: solid 2px #fff;
+	padding: 0 20px!important;
+	line-height: 22px;
+}
+
+.AccordionPanelOpen .AccordionPanelTab {
+	border-color: transparent
+}
+.AccordionPanelOpen .AccordionPanelTab .seta {
+	transform: rotate(180deg);
+}
+.AccordionPanelOpen .AccordionPanelContent {
+	height: auto!important
+}
